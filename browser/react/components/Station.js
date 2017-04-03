@@ -2,26 +2,23 @@ import React from 'react';
 import Songs from './Songs';
 
 export default function (props) {
+  console.log('logging from station ',props);
 
-  const DUMMY_GENRE_NAME = 'Jazz';
-  const DUMMY_SONGS = [{
-    id: 1,
-    name: "A Love Supreme",
-    genre: "Jazz",
-    artists: [{ name: "John Coltrane" }]
-  }];
-  const DUMMY_CURRENT_SONG = {};
-  const DUMMY_IS_PLAYING = false;
-  const DUMMY_TOGGLE_ONE = function () {};
+  const genreName = props.genreName;
+  const songs = props.songs;
+  const isPlaying = props.isPlaying;
+  const currentSong = props.currentSong;
+  const toggleOne = props.toggleOne;
+
 
   return(
     <div>
-    <h3>{DUMMY_GENRE_NAME}</h3>
+    <h3>{genreName}</h3>
     <Songs
-      songs = {DUMMY_SONGS}
-      currentSong = {DUMMY_CURRENT_SONG}
-      isPlaying = {DUMMY_IS_PLAYING}
-      toggleOne = {DUMMY_TOGGLE_ONE}
+      songs = {songs}
+      currentSong = {currentSong}
+      isPlaying = {isPlaying}
+      toggleOne = {toggleOne}
     />
     </div>
   );

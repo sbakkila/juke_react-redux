@@ -21,7 +21,9 @@ const mapStateToProps = function(state) {
 
 }
 const mapDispatchToProps = function(dispatch) {
-  return {}
+  return {
+    toggleOne: function(){}
+  }
 }
 const containerComponentCreator = connect(mapStateToProps, mapDispatchToProps);
 
