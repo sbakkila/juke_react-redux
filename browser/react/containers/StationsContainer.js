@@ -22,7 +22,9 @@ const mapStateToProps = function(state) {
 }
 const mapDispatchToProps = function(dispatch) {
   return {
-    toggleOne: function(){}
+      toggleOne: function(song, list){
+        dispatch(toggleSong(song, list));
+    }
   }
 }
 const containerComponentCreator = connect(mapStateToProps, mapDispatchToProps);

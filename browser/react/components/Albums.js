@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router';
 
 export default function Albums (props) {
-
+  console.log('Props in Albums: ',props)
   const albums = props.albums;
 
   return (
@@ -28,3 +28,4 @@ export default function Albums (props) {
     </div>
   );
 };
+
