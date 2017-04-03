@@ -6,7 +6,7 @@ const mapStateToProps = function(state) {
   return {
 
 
-   //  ...state.player,
+  //  ...state.player,
     currentSongList: state.player.currentSongList,
     progress: state.player.progress,
     currentSong: state.player.currentSong,
@@ -26,4 +26,3 @@ const containerComponentCreator = connect(mapStateToProps, mapDispatchToProps);
 
 const ArtistContainer = containerComponentCreator(Artist);
 export default ArtistContainer;
-

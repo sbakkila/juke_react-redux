@@ -16,10 +16,6 @@ module.exports = {
         test: /jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
-        options: {
-          presets: ['env'],
-          plugins: [require('babel-plugin-transform-object-rest-spread')]
-        },
         query: {
           presets: ['react', 'es2015']
         }
